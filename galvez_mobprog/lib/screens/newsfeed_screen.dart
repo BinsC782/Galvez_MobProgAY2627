@@ -1,0 +1,27 @@
+import 'package:flutter/material.dart';
+import '../widgets/newsfeed_card.dart';
+
+class NewsFeedScreen extends StatelessWidget {
+  const NewsFeedScreen({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return ListView(
+      children: const [
+        NewsFeedCard(
+          userName: 'Rei Vince Aguilar Galvez',
+          postContent: 'Hello this is my Laboratory Activity 1A',
+          numOfLikes: 100,
+          date: 'November 23, 2026',
+        ),
+        NewsFeedCard(
+          userName: 'Rei Vince Aguilar Galvez',
+          postContent: 'Congrats NU PepSquad!',
+          numOfLikes: 200,
+          hasImage: true,
+          date: 'November 22, 2026',
+        ),
+      ],
+    );
+  }
+}
